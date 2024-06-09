@@ -31,12 +31,14 @@ public class CalculateListener implements ActionListener {
         } else {
             view.getCylinderHeightError().setText("");
         }
-        if (model.checkIfFileExists()) {
-            view.getFileNameLabel().setText(FileHandler.getFilePath());
-        }
+
         view.getTxtArea().setText("");
         view.getTxtArea().append(model.getSphereUserInput(inputSphereRadius));
         view.getTxtArea().append(model.getCylinderUserInput(inputCylinderRadius, inputCylinderHeight));
+
+        if (model.checkIfFileExists()) {
+            view.getFileNameLabel().setText(FileHandler.getFilePath());
+        }
 
     }
 }

@@ -12,7 +12,7 @@ public class MainPanel extends JPanel {
     private JLabel cylinderHeightError;
     private JLabel fileNameLabel;
     public MainPanel() {
-        setPreferredSize(new Dimension(335, 380));
+        setPreferredSize(new Dimension(370, 380));
         setLayout(new BorderLayout());
 
         createComponents();
